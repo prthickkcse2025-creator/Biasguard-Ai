@@ -6,7 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
-
+import subprocess
+subprocess.run(["pip", "install", "matplotlib"])
+    
 st.set_page_config(page_title="BiasGuard AI", layout="wide")
 
 st.title("BiasGuard AI - Fairness Firewall")
